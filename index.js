@@ -27,7 +27,10 @@ function parallelLimit(jobs, max) {
     return Promise.all( runners )
 }
 
+function series(jobs) {
+    return parallelLimit(jobs, 1)
+}
 
 module.exports = {
-  parallel, parallelLimit
+  parallel, parallelLimit, series
 }

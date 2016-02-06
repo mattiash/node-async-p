@@ -59,3 +59,11 @@ test( 'parallelLimit max = 1', function(t) {
         t.deepEqual(result, [1,1,2,2,3,3])
     })
 })
+
+test( 'series', function(t) {
+    t.plan(1)
+    clear()
+    async.series([job, job, job], 1).then(function(res) {
+        t.deepEqual(result, [1,1,2,2,3,3])
+    })
+})
