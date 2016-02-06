@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/tape test/test-*.js",
-    "lint": "./node_modules/.bin/eslint **.js"
+    "lint": "./node_modules/.bin/eslint **.js",
+    "pretest": "npm run lint",
+    "prepublish": "npm run test"
   },
   "author": "Mattias Holmlund <mattias@holmlund.se>",
   "bugs": {
