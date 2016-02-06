@@ -1,5 +1,5 @@
 {
-  "name": "promise-async",
+  "name": "async-p",
   "version": "1.0.0",
   "description": "async based on promises",
   "main": "index.js",
@@ -7,6 +7,13 @@
     "test": "./node_modules/.bin/tape test/test-*.js"
   },
   "author": "Mattias Holmlund <mattias@holmlund.se>",
+  "bugs": {
+    "url": "https://github.com/mattiash/node-async-p/issues"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mattiash/node-async-p.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "debug": "^2.2.0",

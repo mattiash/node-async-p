@@ -11,14 +11,14 @@ pull-requests for other methods.
 
 ## installation
 
-    npm install promise-async
+    npm install async-p
 
 ## job functions
 
 All async-functions take an array of jobs as the first parameter. A job is a
 function that returns a promise.
 
-    var async = require('promise-async')
+    var async = require('async-p')
 
     function job() {
         return new Promise(function(resolve) {
