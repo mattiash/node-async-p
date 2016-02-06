@@ -4,19 +4,21 @@
   "description": "async based on promises",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/tape test/test-*.js"
+    "test": "./node_modules/.bin/tape test/test-*.js",
+    "lint": "./node_modules/.bin/eslint **.js"
   },
   "author": "Mattias Holmlund <mattias@holmlund.se>",
   "bugs": {
     "url": "https://github.com/mattiash/node-async-p/issues"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/mattiash/node-async-p.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattiash/node-async-p.git"
   },
   "license": "ISC",
   "devDependencies": {
     "debug": "^2.2.0",
+    "eslint": "^1.10.3",
     "tape": "^4.4.0"
   }
 }

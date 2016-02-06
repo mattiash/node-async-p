@@ -6,7 +6,6 @@ function parallel(jobs) {
 
 function parallelLimit(jobs, max) {
     let n
-    let rejected = false
 
     function runJob(i) {
         if( i < jobs.length ) {
@@ -50,6 +49,6 @@ function eachSeries(arr, job) {
 }
 
 module.exports = {
-  parallel, parallelLimit, series,
-  each, eachLimit, eachSeries
+    parallel, parallelLimit, series,
+    each, eachLimit, eachSeries
 }
