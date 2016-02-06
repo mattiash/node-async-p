@@ -1,6 +1,6 @@
 {
   "name": "async-p",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "async based on promises",
   "main": "index.js",
   "scripts": {
