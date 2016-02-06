@@ -31,6 +31,25 @@ function series(jobs) {
     return parallelLimit(jobs, 1)
 }
 
+function each(arr, job) {
+    return Promise.all(arr.map(function(item) { return job(item) } ))
+}
+
+function eachLimit(arr, job, limit) {
+    let jobs = arr.map(function(item) {
+        return function() {
+            return job(item)
+        }
+    })
+
+    return parallelLimit(jobs, limit)
+}
+
+function eachSeries(arr, job) {
+    return eachLimit(arr, job, 1)
+}
+
 module.exports = {
-  parallel, parallelLimit, series
+  parallel, parallelLimit, series,
+  each, eachLimit, eachSeries
 }
