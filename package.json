@@ -20,6 +20,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "debug": "^2.2.0",
     "eslint": "^1.10.3",
     "istanbul": "^0.4.2",
