@@ -1,5 +1,8 @@
 # promise-async
 
+
+[![Build Status](https://travis-ci.org/mattiash/node-async-p.svg?branch=master)](https://travis-ci.org/mattiash/node-async-p) [![Coverage Status](https://coveralls.io/repos/github/mattiash/node-async-p/badge.svg?branch=master)](https://coveralls.io/github/mattiash/node-async-p?branch=master)
+
 The [async-module](https://github.com/caolan/async) is a very useful module for
 doing a set of asynchronous operations in a specified order. The async-module
 expects all functions to take a callback as the last parameter. This module
